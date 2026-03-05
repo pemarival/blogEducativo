@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ea56ad;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.ejemplo {
+    background-color: #f6c6f1;
+    padding: 10px;
+    border: 1px solid #ea56ad;
+}
