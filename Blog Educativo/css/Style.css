@@ -253,3 +253,8 @@ footer {
     border-top: 1px solid var(--gris-borde);
     margin-top: 10px;
 }
+.logosena{
+    margin-left: 40%;
+    border-radius: 55%;
+    border: 2px solid green ;
+}
