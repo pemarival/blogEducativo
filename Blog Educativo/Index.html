@@ -3,6 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Educativo</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+
+    <!--Header-->
+<header>
+    <h1>Blog Educativo</h1>
+    <p>Guía de etiquetas con definiciones, sintaxis y ejemplos</p>
+</header>
+
+    <!--Navegación-->
+<nav>
+    <ul>
+        <li><a href="#estructurales">Estructurales</a></li>
+        <li><a href="#texto">Texto</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#tablas">Tablas</a></li>
+        <li><a href="#formularios">Formularios</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+    </ul>
+</nav>
+
+    <!--Contenido Principal-->
+<main>
+
+    <!--Estructurales-->
+    <details id="estructurales" open>
+        <summary>🏗️ Etiquetas Estructurales</summary>
+        <div class="seccion-contenido">
+
+            <div class="tarjeta">
+                <h3>&lt;header&gt;</h3>
+                <p><strong>Definición:</strong> Representa el encabezado de una página o sección.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;header&gt;Contenido&lt;/header&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <header class="ejemplo"><h4>Título del sitio</h4></header>
+                <p><strong>Buenas prácticas:</strong> Puede haber varios <code>&lt;header&gt;</code>, pero usarse de forma semántica.</p>
+            </div>
+
+                <div class="tarjeta">
+                <h3>&lt;nav&gt;</h3>
+                <p><strong>Definición:</strong> Sección que contiene enlaces de navegación.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;nav&gt;Enlaces&lt;/nav&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <nav class="ejemplo"><a href="#">Inicio</a> | <a href="#">Servicios</a></nav>
+                <p><strong>Buenas prácticas:</strong> Usarlo solo para enlaces importantes de navegación.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;main&gt;</h3>
+                <p><strong>Definición:</strong> Contiene el contenido principal del documento.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;main&gt;Contenido principal&lt;/main&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <main class="ejemplo">Contenido principal</main>
+                <p><strong>Buenas prácticas:</strong> Solo debe existir un <code>&lt;main&gt;</code> por documento.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;section&gt;</h3>
+                <p><strong>Definición:</strong> Define una sección temática dentro del documento.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;section&gt;Contenido&lt;/section&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <section class="ejemplo">
+                    <h4>Sección de ejemplo</h4>
+                    <p>Contenido relacionado.</p>
+                </section>
+                <p><strong>Buenas prácticas:</strong> Debe incluir un encabezado (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, etc.).</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;article&gt;</h3>
+                <p><strong>Definición:</strong> Representa contenido independiente y autónomo.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;article&gt;Contenido independiente&lt;/article&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <article class="ejemplo">
+                    <h4>Título del artículo</h4>
+                    <p>Contenido del artículo.</p>
+                </article>
+                <p><strong>Buenas prácticas:</strong> Puede contener su propio <code>&lt;header&gt;</code> y <code>&lt;footer&gt;</code>.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;aside&gt;</h3>
+                <p><strong>Definición:</strong> Contiene información complementaria al contenido principal.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;aside&gt;Contenido secundario&lt;/aside&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <aside class="ejemplo">Información adicional.</aside>
+                <p><strong>Buenas prácticas:</strong> Debe complementar el contenido principal.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;footer&gt;</h3>
+                <p><strong>Definición:</strong> Representa el pie de página de una sección o documento.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;footer&gt;Información final&lt;/footer&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <footer class="ejemplo">© 2026 Mi Sitio Web</footer>
+                <p><strong>Buenas prácticas:</strong> Puede haber varios <code>&lt;footer&gt;</code> dentro de un documento.</p>
+            </div>
+
+        </div>
+    </details>
+
+
+       <!--Texto--->
+    <details id="texto">
+        <summary>✏️ Etiquetas de Texto</summary>
+        <div class="seccion-contenido">
+
+            <div class="tarjeta">
+                <h3>&lt;p&gt;</h3>
+                <p><strong>Definición:</strong> Define un párrafo de texto.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;p&gt;Texto&lt;/p&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <p class="ejemplo">Este es un párrafo de ejemplo.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;h1&gt; a &lt;h6&gt;</h3>
+                <p><strong>Definición:</strong> Etiquetas de encabezado. <code>&lt;h1&gt;</code> es el más importante y <code>&lt;h6&gt;</code> el menor.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;h1&gt;Título principal&lt;/h1&gt;
+                &lt;h2&gt;Subtítulo&lt;/h2&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <div class="ejemplo">
+                    <h1 style="font-size:1.5rem">Título H1</h1>
+                    <h2 style="font-size:1.3rem">Título H2</h2>
+                    <h3 style="font-size:1.1rem">Título H3</h3>
+                </div>
+                <p><strong>Buenas prácticas:</strong> Solo un <code>&lt;h1&gt;</code> por página y respetar el orden jerárquico.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;span&gt;</h3>
+                <p><strong>Definición:</strong> Etiqueta en línea para aplicar estilos a una parte del texto.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;span&gt;Texto&lt;/span&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <p class="ejemplo">Este texto tiene una <span style="color:#7c3aed; font-weight:600;">palabra resaltada</span>.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;strong&gt;</h3>
+                <p><strong>Definición:</strong> Indica que el texto tiene importancia fuerte (negrita semántica).</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;strong&gt;Texto importante&lt;/strong&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <p class="ejemplo">Este texto es <strong>muy importante</strong>.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;em&gt;</h3>
+                <p><strong>Definición:</strong> Indica énfasis en el texto (cursiva semántica).</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;em&gt;Texto enfatizado&lt;/em&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <p class="ejemplo">Este texto tiene <em>énfasis</em>.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;hr&gt;</h3>
+                <p><strong>Definición:</strong> Representa un cambio temático entre párrafos (línea horizontal).</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;hr&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <hr class="ejemplo">
+                <p><strong>Buenas prácticas:</strong> Es autocontenida, no necesita cierre.</p>
+            </div>
+
+        </div>
+    </details>
+
+
+    <!-- Listas -->
+    <details id="listas">
+        <summary>📋 Etiquetas de Listas</summary>
+        <div class="seccion-contenido">
+
+            <div class="tarjeta">
+                <h3>&lt;ul&gt; y &lt;li&gt;</h3>
+                <p><strong>Definición:</strong> Crean una lista desordenada (con viñetas).</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;ul&gt;
+                &lt;li&gt;Elemento 1&lt;/li&gt;
+                &lt;li&gt;Elemento 2&lt;/li&gt;
+                &lt;/ul&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <ul class="ejemplo">
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                </ul>
+            </div>
+
+        </div>
+    </details>
+
+
+    <!-- Tablas -->
+    <details id="tablas">
+        <summary>📊 Etiqueta Tabla</summary>
+        <div class="seccion-contenido">
+
+            <div class="tarjeta">
+                <h3>&lt;td&gt;</h3>
+                <p><strong>Definición:</strong> Define una celda de datos dentro de una fila (<code>&lt;tr&gt;</code>) en una tabla.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;td&gt;Dato&lt;/td&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <table class="ejemplo">
+                    <tr>
+                        <td>Mariana</td>
+                        <td>18</td>
+                    </tr>
+                </table>
+                <p><strong>Buenas prácticas:</strong> Siempre debe estar dentro de un <code>&lt;tr&gt;</code>.</p>
+            </div>
+
+        </div>
+    </details>
+
+
+    <!-- Formularios -->
+    <details id="formularios">
+        <summary>📝 Etiqueta Formulario</summary>
+        <div class="seccion-contenido">
+
+            <div class="tarjeta">
+                <h3>&lt;form&gt;</h3>
+                <p><strong>Definición:</strong> Crea un formulario para que el usuario pueda enviar datos.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <form id="contacto">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" placeholder="Tu nombre" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+    </details>
+
+
+    <!-- Multimedia-->
+    <details id="multimedia">
+        <summary>🎬 Etiquetas Multimedia</summary>
+        <div class="seccion-contenido">
+
+            <div class="tarjeta">
+                <h3>&lt;img&gt;</h3>
+                <p><strong>Definición:</strong> Inserta una imagen en la página.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;img src="imagen.jpg" alt="Descripción"&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <img class="ejemplo" src="img/programacion.jpg" alt="Imagen de ejemplo">
+                <p><strong>Buenas prácticas:</strong> Siempre incluir el atributo <code>alt</code> para accesibilidad.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;iframe&gt;</h3>
+                <p><strong>Definición:</strong> Incrusta otro documento o video dentro de la página.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;iframe src="URL" width="300" height="200"&gt;&lt;/iframe&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <iframe class="ejemplo"
+                        src="https://www.youtube.com/embed/JwuUfAWh3Jk"
+                        width="300" height="200"
+                        title="Video de ejemplo">
+                </iframe>
+                <p><strong>Buenas prácticas:</strong> Incluir siempre el atributo <code>title</code>.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;video&gt;</h3>
+                <p><strong>Definición:</strong> Inserta un video directamente en la página.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <video class="ejemplo" width="300" height="200" controls>
+                    <source src="videos/ejemplo.mp4" type="video/mp4">
+                </video>
+                <p><strong>Buenas prácticas:</strong> Usar <code>controls</code> para que el usuario pueda reproducirlo.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>&lt;audio&gt;</h3>
+                <p><strong>Definición:</strong> Inserta un archivo de audio en la página.</p>
+                <p><strong>Sintaxis:</strong></p>
+                <pre>&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</pre>
+                <p><strong>Ejemplo:</strong></p>
+                <audio class="ejemplo" controls>
+                    <source src="audio/ejemplo.mp3" type="audio/mpeg">
+                </audio>
+                <p><strong>Buenas prácticas:</strong> Usar <code>&lt;source&gt;</code> para ofrecer varios formatos (mp3, ogg).</p>
+            </div>
+
+        </div>
+    </details>
+
+</main>  
     <title>Document</title>
     <link rel="stylesheet" href="css/Style.css">
 </head>
